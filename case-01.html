@@ -2,9 +2,174 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Case-01</title>
+  <link rel="stylesheet" href= "asserts/lib/normalize.css">
+
+  <style>
+    body>div.main{
+      width: 50vw;
+      height: 50vh;
+      position: absolute;
+    }
+
+    body>.main:nth-child(1){
+      background-color: green;
+    }
+
+    body>.main:nth-child(2){
+      background-color: purple;
+      left: 0;
+      bottom: 0;
+
+    }
+
+    body>.main:nth-child(3){
+      background-color: red;
+      right: 0;
+    }
+
+    body>.main:nth-child(4){
+      background-color: navy;
+      right: 0;
+      bottom: 0;
+    }
+
+    body>.main>div{
+      width: 100px;
+      aspect-ratio: 1/1;
+      background-color: white;
+      border-radius: 100%;
+      position: absolute;
+
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    body>.main>div>div{
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      position: absolute;
+
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    body>.l{
+      width: 150px;
+      height: 150px;
+      background-color: white;
+      position: absolute;
+
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    body>.l>div{
+      width: 100px;
+      aspect-ratio: 1/1;
+      background-color: red;
+      position: absolute;
+      border-radius: 100%;
+
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    body>.corner:nth-child(6){
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      background-color: white;
+      border-bottom-right-radius: 100px;
+    }
+
+    body>.corner:nth-child(7){
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      right: 0;
+      background-color: white;
+      border-bottom-left-radius: 100px;
+    }
+
+    body>.corner:nth-child(8){
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: white;
+      border-top-left-radius: 100px;
+    }
+
+    body>.corner:nth-child(9){
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: white;
+      border-top-right-radius: 100px;
+    }
+
+    body>.corner:nth-child(10){
+      width: 200px;
+      height: 100px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 0;
+      background-color: white;
+      border-bottom-right-radius: 100px;
+      border-bottom-left-radius: 100px;
+
+    }
+
+    body>.corner:nth-child(11){
+      width: 200px;
+      height: 100px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 0;
+      background-color: white;
+      border-top-right-radius: 100px;
+      border-top-left-radius: 100px;
+    }
+
+  </style>
+
 </head>
+
 <body>
-$END$
+<div class="main"><div><div></div></div></div>
+<div class="main"><div><div></div></div></div>
+<div class="main"><div><div></div></div></div>
+<div class="main"><div><div></div></div></div>
+
+<div class="l"><div></div></div>
+
+<div class="corner"><div><div></div></div></div>
+<div class="corner"><div><div></div></div></div>
+<div class="corner"><div><div></div></div></div>
+<div class="corner"><div><div></div></div></div>
+
+<div class="corner"><div><div></div></div></div>
+<div class="corner"><div><div></div></div></div>
 </body>
 </html>

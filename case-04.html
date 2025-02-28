@@ -1,10 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>case-04</title>
+    <link rel="stylesheet" href= "asserts/lib/normalize.css">
+
+    <style>
+
+        section {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 5rem;
+            margin: 0;
+        }
+
+        .section01 {
+            background-color: white;
+        }
+        .section01 > div {
+            width: 100vw;
+            height: 100px;
+            background: red;
+            position: sticky;
+            top: 0;
+            font-size: 2rem;
+            color: white;
+
+        }
+
+        .section02 {
+            background-color: lightblue;
+        }
+        .section02 > div {
+            width: 100vw;
+            height: 100px;
+            background: blue;
+            position: sticky;
+            top: 0;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .section03 {
+            background-color: lightgray;
+        }
+
+        .section03 > div {
+            width: 100vw;
+            height: 100px;
+            background: gray;
+            position: sticky;
+            top: 0;
+            font-size: 2rem;
+            color: white;
+        }
+
+
+        .section04 {
+            background-color: salmon;
+        }
+        .section04 > div {
+            width: 100vw;
+            height: 100px;
+            background: darkred;
+            position: sticky;
+            top: 0;
+            font-size: 2rem;
+            color: white;
+        }
+
+    </style>
 </head>
 <body>
-$END$
+<section class="section01">
+    <div>Card 1</div>
+    <h2>Hello</h2>
+</section>
+
+<section class="section02">
+    <div>Card 2</div>
+    <h2>How</h2>
+</section>
+
+<section class="section03">
+    <div>Card 3</div>
+    <h2>Are</h2>
+</section>
+
+<section class="section04">
+    <div>Card 4</div>
+    <h2>You...?</h2>
+</section>
+
 </body>
 </html>

@@ -1,10 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Circles</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 300vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: white;
+        }
+
+
+        .fixed-border {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 20px solid gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+
+        .inner-border {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 15px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+
+        .circle {
+            position: absolute;
+            width: 199px;
+            height: 199px;
+            border-radius: 50%;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+
+        .circle1 {
+            background-color: purple;
+            top: 34vh;
+        }
+
+        .circle2 {
+            background-color: blue;
+            top: 120vh;
+        }
+
+        .circle3 {
+            background-color: palevioletred;
+            top: 220vh;
+        }
+
+
+        .spacer {
+            height: 100vh;
+        }
+
+    </style>
 </head>
 <body>
-$END$
+
+<div class="fixed-border">
+    <div class="inner-border">
+    </div>
+</div>
+
+<div class="circle circle1">Hello</div>
+<div class="circle circle2">Welcome To</div>
+<div class="circle circle3">Institute of Software Engineering</div>
+
+<div class="spacer"></div>
+
 </body>
 </html>
