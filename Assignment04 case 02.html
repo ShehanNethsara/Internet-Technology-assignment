@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 2</title>
+
+    <link rel="stylesheet" href="/asserts/lib/normalize.css">
+    <link rel="stylesheet" href="/asserts/lib/fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            background-color: blue;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #main-div {
+            width: 300px;
+            aspect-ratio: 1/1;
+            border: 10px solid white;
+            border-radius: 50%;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 9999;
+
+        }
+
+        h2 {
+            font-size: 30px;
+            color: white;
+            font-weight: bolder;
+            text-align: center;
+            align-items: center;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            transform: translate(225% );
+            z-index: 99999;
+        }
+
+        #quarter-circle {
+            width: 150px;
+            aspect-ratio: 1/1;
+            background: lightgray;
+            border: 10px solid red;
+            border-top-left-radius: 100%;
+            border-bottom: none;
+            border-right: none;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-100%, -100%);
+            z-index: 9999;
+
+        }
+
+        #main-div:hover{
+            animation-name: my-rotate;
+            animation-duration: 2s;
+        }
+
+        @keyframes my-rotate {
+            from {
+                transform:  rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<section>
+    <h2>RWAD</h2>
+    <div id="main-div">
+        <div id="quarter-circle"></div>
+    </div>
+</section>
+
+</body>
+</html>

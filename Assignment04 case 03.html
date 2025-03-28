@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment04 case 04</title>
+
+    <style>
+        body{
+            overflow: hidden;
+        }
+        div{
+            width: 200px;
+            height: 80px;
+            background-color: red;
+            border-radius: 10px;
+            animation-name: example;
+            animation-timing-function: ease-out;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes example {
+            0%{
+                background-color: red;
+                margin-left: 0;
+                margin-top: 0;
+            }
+            25%{
+                background-color: yellow;
+                margin-left: calc(100vw - 200px);
+                margin-top: 0;
+                transform: rotate(90deg);
+            }
+            50%{
+                background-color: green;
+                margin-left: calc(100vw - 200px);
+                margin-top: calc(100vh - 80px);
+                transform: rotate(180deg);
+            }
+            75%{
+                background-color: blue;
+                margin-left: 0;
+                margin-top: calc(100vh - 80px);
+                transform: rotate(270deg);
+            }
+            100%{
+                background-color: red;
+                margin-left: 0;
+                margin-top: 0;
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

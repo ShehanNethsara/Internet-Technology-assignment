@@ -1,33 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a4edec9-a7f5-4e5b-8f57-c4dea4a520f4" name="Changes" comment="" />
+    <list default="true" id="2a4edec9-a7f5-4e5b-8f57-c4dea4a520f4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/asserts/image/3d-cartoon-baby-genius-photo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asserts/image/castle-dragon-moon-night-3840x2160-7226.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asserts/image/hogwarts-harry-5120x2880-13694.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asserts/image/megumi-fushiguro-3840x2160-13535.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asserts/image/sun-moon-girl-clouds-mystic-green-landscape-dream-castle-3840x2160-2357.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asserts/lib/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/asserts/lib/normalize.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2tfrivBS1ajw23Wci172AXqaqle" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.case-01.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.case-02.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.case-03.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.case-04.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.case1.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/IdeaProjects/Assignmenttt/asserts/lib&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\Assignmenttt\asserts\lib" />
+      <recent name="C:\Users\user\IdeaProjects\Assignmenttt\asserts\image" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\Assignmenttt\asserts\image" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -44,6 +84,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1740754102562</updated>
+      <workItem from="1740754179079" duration="2160000" />
+      <workItem from="1742565449741" duration="1088000" />
+      <workItem from="1743176297036" duration="78000" />
     </task>
     <servers />
   </component>
