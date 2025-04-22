@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 08 task 02</title>
+
+  <style>
+
+    *{
+      padding: 0;
+      margin: 0;
+    }
+
+    section{
+      width: 100vw;
+      height: 100vh;
+      background-color: lightgreen;
+
+      position: relative;
+    }
+
+    h1{
+      font-size: 60px;
+      color: black;
+      position: absolute;
+      margin-left:50px;
+      padding: 10px 500px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #middle{
+      width: fit-content;
+      height: fit-content;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      display: flex;
+    }
+    .box{
+      width: 170px;
+      height: 60px;
+      margin: 10px;
+
+    }
+
+    #bottom{
+      position: absolute;
+      bottom: -77px;
+      left: 794px;
+    }
+
+    #top{
+      position: absolute;
+      top: -77px;
+      right: 794px;
+    }
+
+    button{
+      width: 112px;
+      height: 40px;
+      border-radius: 10px;
+      margin: 10px;
+      background-color: black;
+      color: white;
+      font-size: 16px;
+
+    }
+
+    #buttonDiv{
+      width: fit-content;
+      height: fit-content;
+      display: flex;
+      position: absolute;
+      top: 500px;
+      left: 550px;
+
+    }
+
+    .red{
+      background-color: red;
+    }
+
+    .green{
+      background-color: green;
+    }
+
+    .blue{
+      background-color: blue;
+    }
+
+    .yellow{
+      background-color: yellow;
+    }
+
+    .purple{
+      background-color: orangered;
+    }
+
+    .pink{
+      background-color: deeppink;
+    }
+
+  </style>
+
+</head>
+<body>
+
+<section>
+
+  <h1>Java Script Queue</h1>
+
+  <div id="middle">
+    <div id="top" class="box"></div>
+    <div id="middle1" class="box"></div>
+    <div id="middle2" class="box"></div>
+    <div id="middle3" class="box"></div>
+    <div id="middle4" class="box"></div>
+    <div id="bottom" class="box"></div>
+  </div>
+
+
+  <div id="buttonDiv">
+    <button id="Start">Start</button>
+    <button id="Stop">Stop</button>
+  </div>
+
+
+</section>
+
+<script src="jquery-3.7.1.min.js"></script>
+
+<script>
+
+  $('.box').eq(0).addClass("red");
+  $('.box').eq(1).addClass("green");
+  $('.box').eq(2).addClass("blue");
+  $('.box').eq(3).addClass("yellow");
+  $('.box').eq(4).addClass("purple");
+  $('.box').eq(5).addClass("pink");
+
+  var interval = null;
+
+  var ar = ["red","green","blue","yellow","purple","pink"];
+
+  function move(){
+
+
+    $('.box').removeClass("red");
+    $('.box').removeClass("green");
+    $('.box').removeClass("blue");
+    $('.box').removeClass("yellow");
+    $('.box').removeClass("purple");
+    $('.box').removeClass("pink");
+
+
+    let last = ar.pop();
+    ar.unshift(last);
+
+    for (let i = 0; i < ar.length; i++) {
+      console.log(i+" : " +ar[i]);
+    }
+
+    $('.box').eq(0).addClass(ar[0]);
+    $('.box').eq(1).addClass(ar[1]);
+    $('.box').eq(2).addClass(ar[2]);
+    $('.box').eq(3).addClass(ar[3]);
+    $('.box').eq(4).addClass(ar[4]);
+    $('.box').eq(5).addClass(ar[5]);
+
+  }
+
+  $('#Start').on("click",() =>{
+    interval = setInterval(move,900);
+  });
+
+  $('#Stop').on("click",() =>{
+    clearInterval(interval)
+  });
+
+
+
+</script>
+
+</body>
+</html>

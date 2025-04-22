@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 08 task 01</title>
+
+    <style>
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 3rem;
+            color: darkred;
+        }
+
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<h1>JSQue</h1>
+<section>
+    <div><span>A</span><br><img src="asserts/image/mans.gif" width="200px"></div>
+    <div><span>B</span><br><img src="asserts/image/mans.gif" width="200px"></div>
+    <div><span>C</span><br><img src="asserts/image/mans.gif" width="200px"></div>
+    <div><span>D</span><br><img src="asserts/image/mans.gif" width="200px"></div>
+    <div><span>E</span><br><img src="asserts/image/mans.gif" width="200px"></div>
+    <div><span>F</span><br><img src="asserts/image/mans.gif" width="200px"></div>
+</section>
+
+<script>
+    let data = ['A', 'B', 'C', 'D', 'E', 'F'];
+
+    const updateLetters = () => {
+        let lastLetter = data.pop();
+        data.unshift(lastLetter);
+
+        const spans = document.querySelectorAll('section div span');
+        spans.forEach((span, index) => {
+            span.innerText = data[index];
+        });
+    }
+
+    setInterval(updateLetters, 3000);
+</script>
+</body>
+</html>
