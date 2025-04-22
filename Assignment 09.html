@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 09</title>
+
+  <script src="jquery-3.7.1.min.js"></script>
+  <style>
+    body {
+      background: #000000;
+      display: flex;
+      flex-direction: column;
+      margin-top: 350px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #light_Pannel {
+      display: flex;
+      height: 50px;
+      width: 500px;
+      align-items: center;
+      justify-content: space-around;
+      border: 1px solid red;
+      margin-bottom: 20px;
+    }
+
+    .light {
+      height: 30px;
+      width: 75px;
+      border: 1px solid white;
+      background: white;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+
+    #Start {
+      background-color: green;
+      color: white;
+    }
+
+    #Stop {
+      background-color: red;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+<section id="light_Pannel">
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+</section>
+
+<section id="Button_pannel">
+  <button id="Start">Start</button>
+  <button id="Stop">Stop</button>
+</section>
+
+<script>
+  let currentLight = -1;
+  const lightCount = 6;
+  let direction = "Right";
+  let intervalId = null;
+
+  function updateLight() {
+    if (direction === "Right") {
+      currentLight++;
+      $(".light").css("background", "gray");
+
+      if (currentLight < lightCount) {
+        $(".light").eq(currentLight).css("background", "red");
+        if (currentLight > 0) {
+          $(".light").eq(currentLight - 1).css("background", "hotpink");
+        }
+      }
+
+      if (currentLight === lightCount - 1) {
+        direction = "Left";
+      }
+    } else {
+      currentLight--;
+      $(".light").css("background", "gray");
+
+      if (currentLight >= 0) {
+        $(".light").eq(currentLight).css("background", "red");
+        if (currentLight < lightCount - 1) {
+          $(".light").eq(currentLight + 1).css("background", "hotpink");
+        }
+      }
+
+      if (currentLight === 0) {
+        direction = "Right";
+      }
+    }
+  }
+
+  $('#Start').on('click', function () {
+    if (intervalId === null) {
+      intervalId = setInterval(updateLight, 100);
+    }
+  });
+
+  $('#Stop').on('click', function () {
+    clearInterval(intervalId);
+    intervalId = null;
+  });
+</script>
+
+</body>
+</html>
